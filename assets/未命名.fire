@@ -23,7 +23,7 @@
         "__id__": 13
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -64,7 +64,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "b4/RGSnSNKc4YO4j/MAE0e"
+    "_id": "3ff9e2f5-309d-4588-bc15-de18c91a2426"
   },
   {
     "__type__": "cc.Node",
@@ -497,11 +497,14 @@
     },
     "_enabled": true,
     "label": null,
+    "bulletPrefab": {
+      "__uuid__": "bada1fdd-5aa5-47d7-a773-5693b1529a90"
+    },
     "_id": "afX+NQcldNMqhJP5UDbb/T"
   },
   {
     "__type__": "cc.Node",
-    "_name": "W1",
+    "_name": "enemyManage",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -524,8 +527,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 12,
-      "height": 30
+      "width": 0,
+      "height": 0
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -536,8 +539,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        213.78,
-        130.848,
+        38,
+        900,
         0,
         0,
         0,
@@ -559,40 +562,19 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "aa+d7T1StHhqy3C8qUVD25"
+    "_id": "01uIC5KC9B4IzP4hzB1rOw"
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "26d98wMt7VNK545gHoV3yQd",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 13
     },
     "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "46858a67-8ab3-4798-acd7-0c12d6a0dccb"
+    "enemyPrefab": {
+      "__uuid__": "ba75cf0d-e3b0-4146-b279-cf541725a6e0"
     },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_atlas": {
-      "__uuid__": "f5502f26-b2af-4f3e-9d37-2afafdc27929"
-    },
-    "_id": "46SSOoA/RHkrtqvlxYzAWD"
+    "_id": "f2zZjpgOFN/Jqnm/f+K57w"
   }
 ]
