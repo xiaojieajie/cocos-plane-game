@@ -1,4 +1,4 @@
-import BulletControl from "./bullet/EnemyBullet";
+import BulletControl from "./bullet/PlayerBullet";
 
 
 const {ccclass, property} = cc._decorator;
@@ -30,9 +30,12 @@ export default class EnemyControl extends cc.Component {
     }
     
     public die() {
-        cc.resources.load<cc.SpriteAtlas>('textureOpaquePack', cc.SpriteAtlas, (err, atlas) => {
-            const hit = atlas.getSpriteFrame('hit');
-            this.node.getComponent(cc.Sprite).spriteFrame = hit;
+        cc.resources.load<cc.SpriteAtlas>('boom', cc.SpriteAtlas, (err, atlas) => {
+            const hit = atlas.getSpriteFrame('1');
+            const sprite = this.node.getComponent(cc.Sprite);
+            sprite.spriteFrame = hit;
+            this.node.width = 60;
+            this.node.height = 60;
             cc.tween(this.node).to(0.3, { scale: 2 }).start();
         });
         this.scheduleOnce(() => {

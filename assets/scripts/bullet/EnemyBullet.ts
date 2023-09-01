@@ -13,7 +13,7 @@ export default class EnemyBulletControl extends cc.Component {
   protected update(dt: number): void {
     this.node.y -= this.speed * dt;
 
-    if (this.node.y <= -(cc.winSize.height + 50)) {
+    if (this.node.y <= -(cc.winSize.height + 150)) {
       this.node.destroy();
     }
   }

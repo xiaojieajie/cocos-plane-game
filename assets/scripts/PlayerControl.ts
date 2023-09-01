@@ -8,18 +8,21 @@ export default class PlayerControl extends cc.Component {
   @property(cc.Prefab)
   bulletPrefab: cc.Prefab = null
 
+  @property(cc.Integer)
+  emitRate = 0.4;
+
   protected onLoad(): void {
-    cc.resources.load<cc.SpriteAtlas>('textureTransparentPack', cc.SpriteAtlas, (err, atlas) => {
-      this.scheduleOnce(() => {
-        const ship02 = atlas.getSpriteFrame('ship02');
-        this.node.getComponent(cc.Sprite).spriteFrame = ship02;
-      }, 0.2)
-      this.scheduleOnce(() => {
-        const ship01 = atlas.getSpriteFrame('ship01');
-        this.node.getComponent(cc.Sprite).spriteFrame = ship01;
-        this.node.y += 14
-      }, 0.4)
-    })
+    // cc.resources.load<cc.SpriteAtlas>('textureTransparentPack', cc.SpriteAtlas, (err, atlas) => {
+    //   this.scheduleOnce(() => {
+    //     const ship02 = atlas.getSpriteFrame('ship02');
+    //     this.node.getComponent(cc.Sprite).spriteFrame = ship02;
+    //   }, 0.2)
+    //   this.scheduleOnce(() => {
+    //     const ship01 = atlas.getSpriteFrame('ship01');
+    //     this.node.getComponent(cc.Sprite).spriteFrame = ship01;
+    //     this.node.y += 14
+    //   }, 0.4)
+    // })
     cc.director.getCollisionManager().enabled = true;
 
     //    cc.assetManager
@@ -35,7 +38,7 @@ export default class PlayerControl extends cc.Component {
       const bullet = cc.instantiate(this.bulletPrefab);
       bullet.setPosition(this.node.x, this.node.y + 50);
       this.node.parent.addChild(bullet);
-    }, 0.2)
+    }, this.emitRate)
   }
 
   protected update(dt: number): void {
@@ -46,7 +49,7 @@ export default class PlayerControl extends cc.Component {
       this.node.destroy();
       // 输了
     }
-    // console.log('我被碰到了', other)
+    console.log('我被碰到了', other)
   }
 
 }

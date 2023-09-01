@@ -6,14 +6,10 @@ export default class BgControl extends cc.Component {
     label: cc.Label = null
 
     @property(cc.Integer)
-    speed: number = 500;
+    speed: number = 200;
 
     
-
     protected onLoad(): void {
-        console.log(this.node);
-        console.log(this.node.position.y) 
-        // this.initialY = this.node.position.y;
     }
 
     protected start(): void {

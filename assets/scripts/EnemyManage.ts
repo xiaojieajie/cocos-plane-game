@@ -29,7 +29,7 @@ export default class NewClass extends cc.Component {
     public createEnemy() {
         const enemyPrefab = cc.instantiate(this.enemyPrefab);
         enemyPrefab.x = Math.random() * (cc.winSize.width - enemyPrefab.width);
-        const y = getRangeRandom(-200, -150)
+        const y = getRangeRandom(-250, -160)
         cc.tween(enemyPrefab).to(1.5, { y }).start();
         this.node.addChild(enemyPrefab);
     }
