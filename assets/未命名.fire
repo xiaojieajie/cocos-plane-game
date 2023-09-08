@@ -20,10 +20,10 @@
         "__id__": 10
       },
       {
-        "__id__": 13
+        "__id__": 14
       },
       {
-        "__id__": 15
+        "__id__": 16
       }
     ],
     "_active": false,
@@ -407,6 +407,9 @@
       },
       {
         "__id__": 12
+      },
+      {
+        "__id__": 13
       }
     ],
     "_prefab": null,
@@ -505,6 +508,27 @@
     "_id": "afX+NQcldNMqhJP5UDbb/T"
   },
   {
+    "__type__": "cc.BoxCollider",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 10
+    },
+    "_enabled": true,
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": -1
+    },
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 103,
+      "height": 63
+    },
+    "_id": "bfDQpm3cJI5JS6qbXC7rRx"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "enemyManage",
     "_objFlags": 0,
@@ -515,7 +539,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 14
+        "__id__": 15
       }
     ],
     "_prefab": null,
@@ -571,7 +595,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 13
+      "__id__": 14
     },
     "_enabled": true,
     "enemyPrefab": {
@@ -590,10 +614,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 16
+        "__id__": 17
       },
       {
-        "__id__": 17
+        "__id__": 18
       }
     ],
     "_prefab": null,
@@ -649,9 +673,9 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 15
+      "__id__": 16
     },
-    "_enabled": true,
+    "_enabled": false,
     "_defaultClip": {
       "__uuid__": "b00d0e70-6af5-4f95-a92f-32bd70190579"
     },
@@ -671,7 +695,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 15
+      "__id__": 16
     },
     "_enabled": false,
     "_materials": [
