@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "enemyBullet",
+    "_name": "Oddball",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -24,13 +24,10 @@
       },
       {
         "__id__": 3
-      },
-      {
-        "__id__": 4
       }
     ],
     "_prefab": {
-      "__id__": 5
+      "__id__": 4
     },
     "_opacity": 255,
     "_color": {
@@ -42,8 +39,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 47,
-      "height": 48
+      "width": 89,
+      "height": 96
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -54,15 +51,15 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        240,
-        130.848,
         0,
         0,
         0,
         0,
-        1,
-        1,
-        1,
+        0,
+        0.3420201433256687,
+        0.9396926207859084,
+        0.8,
+        0.8,
         1
       ]
     },
@@ -70,7 +67,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0
+      "z": 40
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -95,7 +92,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "d26ea59f-7af4-467a-86ba-60307c032644"
+      "__uuid__": "b48aa862-bb5c-4d30-a6f0-4fb195155d4e"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -112,28 +109,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.BoxCollider",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "tag": 1,
-    "_offset": {
-      "__type__": "cc.Vec2",
-      "x": -1.2,
-      "y": -2.4
-    },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 8.4,
-      "height": 21.5
-    },
-    "_id": ""
-  },
-  {
-    "__type__": "575a2b10NZNQ41nhD7827aw",
+    "__type__": "e77cdefe7hLeqWGErdbkjJz",
     "_name": "",
     "_objFlags": 0,
     "node": {

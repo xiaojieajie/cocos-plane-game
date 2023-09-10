@@ -2,19 +2,10 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class BgControl extends cc.Component {
 
-    @property(cc.Label)
-    label: cc.Label = null
 
     @property(cc.Integer)
-    speed: number = 200;
+    speed: number = 100;
 
-    
-    protected onLoad(): void {
-    }
-
-    protected start(): void {
-
-    }
 
     protected update(dt: number): void {
         this.node.y -= this.speed * dt;
